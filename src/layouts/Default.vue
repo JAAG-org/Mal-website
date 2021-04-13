@@ -9,7 +9,10 @@
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
     </header>
-    <slot/>
+    <div class="content"> 
+      <slot/>
+    </div>
+   
   </div>
 </template>
 
@@ -23,19 +26,29 @@ query {
 
 <style>
 body {
-  font-family: 'Mukta', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin:0;
   padding:0;
   line-height: 1.5;
+  background-color: rgb(228, 228, 228);
+}
+
+.content {
+  margin-top: 80px;
 }
 
 h1 {
-  font-family: 'Antic Didone', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue', Roboto, Arial, sans-serif;
 }
 
 a {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   text-decoration: none;
   color: black;
+}
+
+p {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 a:hover {
@@ -44,10 +57,9 @@ a:hover {
 }
 
 .layout {
-  max-width: 760px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .header {
@@ -56,8 +68,15 @@ a:hover {
   align-items: center;
   margin-bottom: 20px;
   height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
 }
-
+.nav {
+  position: absolute;
+  right: 80px;
+}
 .nav__link {
   margin-left: 20px;
 }

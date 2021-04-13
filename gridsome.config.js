@@ -6,5 +6,5 @@
 
 module.exports = {
   siteName: 'Mal {*}',
-  plugins: []
+  plugins: [],
 }
