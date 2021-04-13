@@ -1,18 +1,20 @@
 <template>
-  <div class="layout">
+  <div class="block">
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <div class="content"> 
-      <slot/>
+        <strong>
+          <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        </strong>
+        <nav class="nav">
+          <g-link class="nav__link" to="/">Home</g-link>
+          <g-link class="nav__link" to="/about/">About</g-link>
+          <g-link class="nav__link" to="/event/">Events</g-link>
+        </nav>
+      </header>
+    <div class="layout">
+      <div class="content"> 
+        <slot/>
+      </div>
     </div>
-   
   </div>
 </template>
 
@@ -72,6 +74,8 @@ a:hover {
   position: fixed;
   top: 0px;
   z-index: 999;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .nav {
   position: absolute;
