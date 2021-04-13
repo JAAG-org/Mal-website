@@ -2,7 +2,10 @@
   <Layout>
     <h1 class="brand-name">MAL</h1>
     <div class="text-content">
-      <p class="content">Mal [is] a tattoo shop and artist studio</p>
+      <p class="content-description">Mal [is] a tattoo shop and artist studio</p>
+      <p class="content-address">
+        29 Sukhumvit 31, Klongtoey-Nua, Watthana, Bangkok 10110
+      </p>
     </div>
     <div class="images">
       <g-image
@@ -77,26 +80,32 @@ ul {
   list-style-type: none;
 }
 
-.text-content {
-  position: absolute;
-  top: 130px;
-  left: calc(50% - 200px);
-  text-align: center;
-}
-
-.content {
-  font-size: 30px;
+.content-description {
+  font-size: 24px;
   padding: 10px;
   color: rgb(17, 0, 255);
-  margin-top: 250px;
+  top: 350px;
+  left: 500px;
   position: absolute;
   width: 550px;
   z-index: 1000;
   font-family: 'Comic Sans MS';
 }
-.content:hover {
+.content-description:hover {
   font-style: italic;
   text-decoration: underline;
+}
+.content-address {
+  font-size: 18px;
+  padding: 10px;
+  color: rgb(17, 0, 255);
+  top: 900px;
+  right: 200px;
+  position: absolute;
+  width: 550px;
+  z-index: 1000;
+  font-family: 'Comic Sans MS';
+  text-align: right;
 }
 
 .images {
