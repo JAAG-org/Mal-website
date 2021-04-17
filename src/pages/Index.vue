@@ -17,6 +17,18 @@
       <g-image class="image4" width="400" height="400" fit="cover" src="~/images/pic4.jpeg" />
       <g-image class="image5" width="400" height="400" fit="cover" src="~/images/pic5.jpeg" />
     </div>
+    <div class="spotify-playlist-container">
+      <div class="spotify-playlist">
+        <iframe
+          src="https://open.spotify.com/embed/playlist/4icxHq1hFhj9C4ODlWxUmK"
+          width="300"
+          height="380"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media">
+        </iframe>
+      </div>
+    </div>
     <footer class="footer">
       <p class="address">
         🏘 &nbsp;&nbsp;&nbsp; 29 Sukhumvit 31, Klongtoey-Nua, Watthana, Bangkok 10110
@@ -101,9 +113,16 @@ ul {
   text-decoration: underline;
 }
 
-.images {
+.text-content {
   position: relative;
 }
+
+.images {
+  position: relative;
+  width: 100%;
+  height: 1300px;
+}
+
 .image1 {
   position: absolute;
   top: 0px;
@@ -141,9 +160,8 @@ ul {
   width: 100%;
   height: 150px;
   left: 0;
-  top: 1400px;
   border: 1px solid #ff1e1e;
-  margin-bottom: 200px;
+  margin-bottom: 25px;
 }
 .address {
   color: rgb(0, 0, 0);
@@ -151,10 +169,14 @@ ul {
   margin-top: 30px;
   letter-spacing: 1px;
 }
-.expanded {
-  top: 1000px;
-  height: 250px;
+.spotify-playlist-container {
   position: relative;
-  z-index: -1;
+  width: 100%;
+  height: 400px;
+  margin-top: -400px;
+}
+.spotify-playlist {
+  position: absolute;
+  right: 10%;
 }
 </style>
