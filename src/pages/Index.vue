@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <h1 class="brand-name">MAL</h1>
+    <h1 class="brand-name noselect">MAL</h1>
     <div class="text-content">
-      <p class="content-description">Mal [is] a tattoo shop and artist studios</p>
+      <p class="content-description noselect">Mal [is] a tattoo shop and artist studios</p>
     </div>
     <div class="images">
       <g-image
@@ -37,7 +37,6 @@
         📷 &nbsp;&nbsp;&nbsp; Mal Studio BKK
       </a>
     </footer>
-    <div class="expanded"></div>
   </Layout>
 </template>
 
@@ -77,6 +76,7 @@ export default {
 
 .brand-name {
   font-size: 10rem;
+  font-family: 'Gruppo';
   letter-spacing: 5px;
   margin-left: 10px;
   margin-top: 10px;
@@ -93,24 +93,28 @@ export default {
     , 0 0 55px rgb(255, 37, 37)
     , 0 0 75px rgb(255, 22, 22);
 }
+.brand-name:hover {
+  cursor: cell;
+}
 
 ul {
   list-style-type: none;
 }
 
 .content-description {
-  font-size: 20px;
+  font-size: 28px;
   padding: 10px;
   color: #ff1e1e;
-  top: 350px;
-  left: 550px;
+  top: 300px;
+  left: 500px;
   position: absolute;
   width: 550px;
   z-index: 1000;
+  font-family: 'Gruppo';
 }
 .content-description:hover {
   font-style: italic;
-  text-decoration: underline;
+  cursor: cell;
 }
 
 .text-content {
@@ -160,14 +164,17 @@ ul {
   width: 100%;
   height: 150px;
   left: 0;
-  border: 1px solid #ff1e1e;
   margin-bottom: 25px;
 }
 .address {
   color: rgb(0, 0, 0);
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   letter-spacing: 1px;
+  font-family: 'Gruppo';
+  font-weight: 800;
+  font-size: 18px;
 }
 .spotify-playlist-container {
   position: relative;

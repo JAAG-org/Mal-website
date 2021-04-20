@@ -10,4 +10,8 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Dosis'
   })
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Gruppo'
+  })
 }
