@@ -17,18 +17,6 @@
       <g-image class="image4" width="400" height="400" fit="cover" src="~/images/pic4.jpeg" />
       <g-image class="image5" width="400" height="400" fit="cover" src="~/images/pic5.jpeg" />
     </div>
-    <div class="spotify-playlist-container">
-      <div class="spotify-playlist">
-        <iframe
-          src="https://open.spotify.com/embed/playlist/4icxHq1hFhj9C4ODlWxUmK"
-          width="300"
-          height="380"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media">
-        </iframe>
-      </div>
-    </div>
     <footer class="footer">
       <p class="address">
         🏘 &nbsp;&nbsp;&nbsp; 29 Sukhumvit 31, Klongtoey-Nua, Watthana, Bangkok 10110
