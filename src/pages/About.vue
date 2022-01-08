@@ -22,4 +22,18 @@ export default {
     list-style: none;
     margin: 0;
   }
+
+  h1 {
+    font-family: Gruppo;
+  }
+
+  p {
+    font-family: Gruppo;
+    font-size: 28px;
+  }
+
+  li {
+    font-family: Gruppo;
+    font-size: 24px;
+  }
 </style>
